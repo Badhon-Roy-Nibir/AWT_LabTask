@@ -13,5 +13,8 @@ export class CourseService {
     createcourse():any{
         return {message: "Course Created."};
     }
+    updateCourse(id:string):any{
+        return {message: "Course updated.", id:id};
+    }
 }
 
