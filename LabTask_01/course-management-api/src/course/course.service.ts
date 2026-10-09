@@ -16,5 +16,9 @@ export class CourseService {
     updateCourse(id:string):any{
         return {message: "Course updated.", id:id};
     }
+
+    patchCourse(id:string):any{
+        return {message: "Course Patched."};
+    }
 }
 
