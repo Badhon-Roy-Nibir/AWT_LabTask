@@ -18,7 +18,10 @@ export class CourseService {
     }
 
     patchCourse(id:string):any{
-        return {message: "Course Patched."};
+        return {message: "Course Patched.",id:id};
+    }
+    deleteCourse(id:string){
+        return {message:"Course deleted.", id:id};
     }
 }
 
