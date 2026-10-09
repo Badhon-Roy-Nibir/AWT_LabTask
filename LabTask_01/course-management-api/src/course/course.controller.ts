@@ -9,4 +9,9 @@ export class CourseController {
   getAllCourses():any{
     return this.courseService.getAllCourses();
   }
+
+  @Get(":id")
+  getCourseById(@Param("id")id:string):any{
+    return this.courseService.getCourseById(id);
+  }
 }
