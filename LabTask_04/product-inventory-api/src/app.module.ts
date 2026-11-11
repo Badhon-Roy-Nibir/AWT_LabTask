@@ -9,6 +9,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     type: 'postgres',
     host: 'localhost',
     port: 5432,
+    database: "product_inventory_DB",
     username: 'postgres',
     password: "B@dhon",
     autoLoadEntities: true,
