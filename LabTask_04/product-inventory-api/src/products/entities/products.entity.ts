@@ -16,7 +16,7 @@ export class Products{
 
     @Column({
         type: "decimal",
-        precision: 2,
+        precision: 10,
         scale: 2,
     })
     price: number;
@@ -24,7 +24,7 @@ export class Products{
     @Column({
         default: 0,
     })
-    stock: "number";
+    stock: number;
 
     @Column()
     category: string;
